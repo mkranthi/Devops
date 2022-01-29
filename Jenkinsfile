@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage ("write pipeline line script") {
+    stage ("git checkout") {
       steps { 
-        sh 'echo " executing fist jenkins pipeline script"  
+           git url: https://github.com/mkranthi/Devops.git  
       }
     }   
   }
