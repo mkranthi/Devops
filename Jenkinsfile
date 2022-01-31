@@ -1,10 +1,12 @@
-pipeline {
-  agent any
-  stages {
-    stage ("git checkout") {
-      steps { 
-           git url: https://github.com/mkranthi/Devops.git  
-      }
-    }   
-  }
-}  
+pipeline {  
+    agent any  
+    stages {  
+            stage ('Build') {  
+                steps {
+                 sh 'echo "hello"'
+                 }  
+            }  
+            
+              
+    }  
+}
