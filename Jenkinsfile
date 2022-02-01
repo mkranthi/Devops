@@ -8,7 +8,7 @@ pipeline {
             } 
            stage ('Build') {  
                 steps {
-                    sh "docker build -t sample container https://github.com/mkranthi/Devops  ."
+                    sh "docker build -t 'sample container' https://github.com/mkranthi/Devops  ."
                }  
            }        
     }  
