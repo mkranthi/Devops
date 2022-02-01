@@ -7,8 +7,8 @@ pipeline {
                  }  
             } 
            stage ('Build') {  
-                steps {
-                    sh 'docker build -t sample container /var/lib/jenkins/workspace/docker-pipeline '
+               steps {
+                    docker.build("var/lib/jenkins/workspace/docker-pipeline:${env.BUILD_NUMBER}")
                }  
            }        
     }  
