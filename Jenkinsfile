@@ -3,7 +3,7 @@ pipeline {
     stages {  
             stage ('Build') {  
                 steps {
-                 sh 'echo "hello"'
+                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mkranthi/Devops.git']]])
                  }  
             }  
             
