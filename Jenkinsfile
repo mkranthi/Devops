@@ -8,7 +8,7 @@ pipeline {
             } 
            stage ('Build') {  
                steps {
-                   sh docker.build("var/lib/jenkins/workspace/docker-pipeline:${env.BUILD_NUMBER}")
+                   sh "docker build -t var/lib/jenkins/workspace/docker-pipeline:${env.BUILD_NUMBER}"
                }  
            }        
     }  
