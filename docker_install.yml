@@ -1,0 +1,19 @@
+---
+- name: Docker installation playbook
+  hosts: production
+  become: yes
+  tasks:
+          - name: updating yum 
+            yum: 
+            name: " * "
+            state: latest
+
+         - name: install utills
+           yum:
+                   name: utills
+                   state: latest
+         - name: installing docker
+           yum:
+                  baseurl: https://download.docker.com/linux/rhel/docker-ce.repo
+
+
