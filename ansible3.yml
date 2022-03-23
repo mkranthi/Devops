@@ -1,0 +1,11 @@
+---
+- name: ansible file to  print  gatherfacts
+  hosts: production
+  become: yes
+  tasks:
+    - name: printing  system info ipaddress,memory,ram,os_name
+      ansible.builtin.setup:
+        ansible_architecture:
+          ansible_default_ipv4: ${{address}}
+
+    
