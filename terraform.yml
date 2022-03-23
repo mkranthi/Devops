@@ -1,0 +1,20 @@
+---
+- hosts: production
+  name: installing terraform
+  tasks:
+    - name: installing terraform
+      yum: 
+        name: " * "
+        state: latest
+    - name: doenloading repo 
+      yum_repositroy:
+        base_url: https://rpm.releases.hashicorp.com/$release/hashicorp.repo
+        gpgcheck: no
+    - name: installing terraform from  yum
+      yum_repository:
+        name: docker
+
+
+
+
+
