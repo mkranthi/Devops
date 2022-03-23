@@ -1,0 +1,14 @@
+---
+- name: ansible file to  print  gatherfacts
+  hosts: production
+  become: yes
+  tasks:
+    - name: printing  system info ipaddress,memory,ram,os_name
+      ansible.builtin.setup:
+              filter: ansible_architecture
+              filter: ansible_os_family
+      register: output
+    - ansible.builtin.debug:
+            var: output.stdout
+
+    
