@@ -1,0 +1,10 @@
+---
+- name: printing facts
+  hosts: production
+  become: yes
+  tasks: 
+    
+  - name: gathering facts uinsg debug and register
+  - debug:
+     msg: "{{ ansible_architecture }}"
+    
