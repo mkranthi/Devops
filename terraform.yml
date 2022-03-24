@@ -1,4 +1,23 @@
 ---
+<<<<<<< HEAD
+- name: terrafrom install using ansible
+  hosts: production
+  become: yes
+  tasks:
+          - name: adding terraform repo
+            yum_repository:
+                    name: hashicorp
+                    description: terraform from repo
+                    baseurl: https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+          - name: 
+            yum:
+                    name: " * "
+                    state: latest
+          - name: installing terraform
+            yum:
+                    name: terraform
+                    state: present
+=======
 - hosts: production
   name: installing terraform
   tasks:
@@ -18,3 +37,4 @@
 
 
 
+>>>>>>> 975c5f070d6672b476dbcb4aed28823b5347e5ff
