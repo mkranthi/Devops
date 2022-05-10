@@ -15,4 +15,4 @@ company :wipro cosultent: primus
 12. difference  between groovy(jenkins pipeline script) scripted and  declarative method.
 13. what configuration you have done using ansible in your environment
 14. stages in pipeline
-15
+15. what is debug and registry
