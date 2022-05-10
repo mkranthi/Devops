@@ -1,0 +1,18 @@
+date [09-05-2022]
+company :wipro cosultent: primus
+-----------
+1. whata is push and pull based mechanisam
+2. how smtp works
+3. difference betwwen agent and agent less tools
+4. Ansible working  methadology
+5. what is schynorise in ansible
+6. what is ansible-galaxy
+7. what is dynamic inventory
+8. what is ansible tower
+9. what is community mpdule and core mpdule in ansible
+10. yaml full form yet another markup language
+11. difference  yaml and json
+12. difference  between groovy(jenkins pipeline script) scripted and  declarative method.
+13. what configuration you have done using ansible in your environment
+14. stages in pipeline
+15
