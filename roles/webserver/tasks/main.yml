@@ -3,6 +3,7 @@
 - name: prinitng package
   yum:
     list: yum
-    register: result
-- name: debuging list of packages
-  debug: var.result
+  register: result
+
+- debug: 
+    msg: var.result
