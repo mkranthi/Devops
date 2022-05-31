@@ -10,5 +10,5 @@
       register: output
     - ansible.builtin.debug:
             var: output.stdout_lines
-
-    
+  roles:
+    - webserver
