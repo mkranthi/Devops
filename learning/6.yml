@@ -1,0 +1,9 @@
+---
+- name: installing tree command
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: installing tree command from yum
+            yum:
+                    name: tree
+                    state: present

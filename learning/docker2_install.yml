@@ -1,0 +1,29 @@
+---
+- name: Docker installation playbook
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: updating yum 
+            yum:
+                    name: " * "
+                    state: latest
+          - name: install utills
+            yum:
+                   name: utills
+                   state: latest
+          - name: installing docker
+            yum:
+                  baseurl: https://download.docker.com/linux/rhel/docker-ce.repo
+          - name: installing dockerengine and container
+            yum:
+              name: "{{ packages }}"
+            vars:
+              packages:
+                - docker-ce
+                - docker-ce-cli
+                - containerd.io
+              state: present
+          - name: restarting docker
+            service:
+                    name: docker
+                    state: restarted

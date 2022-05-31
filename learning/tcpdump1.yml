@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+          - name: installing tcpdump command
+            yum:
+                    name: tcpdump
+                    state: latest
+          - name: checking tcpdump installed are not
+            shell: yum list installed | grep tcpdump
+            register: result
+          - name: debuging  register
+            ansible.builtin.debug:
+                    var: result
+          - name:  instaling glances
+            yum:
+                    name: glances
+                    state: present
+            when: result.rc==0 

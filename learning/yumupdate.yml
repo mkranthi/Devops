@@ -1,0 +1,9 @@
+---
+- name: yum module updating
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: updating yum 
+            yum:
+                    name: " * "
+                    state: latest
