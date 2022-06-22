@@ -1,0 +1,83 @@
+infosys first round
+date: 9/6/2022
+
+1. explain about your self
+2. how familier you in linux platform ?
+3. can you explain difference redhat6 and redhat7 ?
+4. difference between softlink and hardlink?
+5. how do you restart service in rhel7 ?
+6. how you will troubleshoot inode filled up ?
+7. how you will troubleshoot filesystem got filled 100 % ?
+8. how to kernel pathcing?
+9. any ideas about os upgrade and os migration?
+10. what is uses of ulimt command ?
+11. how do you check system up and  running?
+12. ping is working fine but we are unable to ssh  server ?
+13. how to give bundle to vendor to investingate for their end. how to know what is going on the server. how do you supplie it ?
+14. how to give network bundle to vendor for investigate?
+15.traceroute command ?
+16. how to check log continuously ? how to see logs of  patching?
+17. how to change root password ?
+18. how do you remove package using rpm and yum command? 
+19. how to install package using yum and rpm?
+20. how do you check repository?
+21. how do you check hardware errors? 
+22. difference between http and https?
+23. do you anything about dns records? and how the dns works ?
+24. what is nic bonding?
+25. what is parameter of /etc/fstab ?
+26. do you anything abot itil ?
+
+==================================================================================================
+kyndryl interview questions
+date: 15/06/2022
+1. what git stragey you are using in your environment.
+2. how do you protect repo from user
+3. clone vs fetch explain clone and fetch
+4. difference  between  git fetch and git pull
+5. what is  git cherry-pick
+6. how do you  configure jenkins for java application. And how do you configure github in jenkins.
+7. write jenkins pipeline for upstream project.
+8. how do you check cpu utilization of docker container
+9. def $ docker ps and $ docker ps -a
+10.docker run and docker cmd used for
+11.do you have any scripting knowledge like bash and python.
+12.how ansible communicate  with other server?
+============================================================
+infosys second round interview question
+date: 16/06/2022
+1.  explain about your roles and responsibility
+2.  can you  explain ci/cd that you guys are following
+3.  do we have any alternative for poll scm better way to do poll scm.
+4.  what kind of  application are they like .net or any other language.
+5.  can you tellme  more about git branching strategy you guys  are following.
+6.  which code goes to non prod and which code goes to prod server.
+7.  how to do you guys deploye code ci process again or doing same pipeline.
+8.  how do cd work.
+9.  do have experince with maven.
+10. do you have experince in tomcat and jboss.
+11. how to change application port in tomcatserver and what is path ?
+12. what is ansible. why you guys are using ansible in your environment.
+13. where does it fit in ci/cd process
+14. when you run ansible playbook it will prompt for the  password how dou pass password it when you are automation?
+15. There is no prompt for sudo password?
+16. how does ssh work.
+17. where do you store public key?
+18. one of the filesystem disk space full how do you handle it? even after deleting few files aslo disk space isnot freeing up what could be the issue?
+19. with out killing process can we do it in any alternative way? if the process is critical?
+20. cronjob configured in your environment?
+21. how do you configure application as a service?
+
+================================================================================
+Mphasis  
+Date: 13/06/2022
+
+. if any applcationserver goes down how do you troubleshoot
+. have you know about loadbalancer?
+. what are the different types loadbalancer?
+. what is symbolic link?
+. how the dhcp  works?
+.how the  dns works? 
+.how the security certificats works?
+
+
