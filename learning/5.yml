@@ -1,0 +1,11 @@
+---
+- name: crating  symbilic linkfile 
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: symboli link file from file module 
+            file:
+                    path: /home/ironman/test-ansible/2.txt
+                    dest: /home/ironman/testing
+                    state: link
+                    force: yes

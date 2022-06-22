@@ -1,0 +1,12 @@
+---
+- name: packages list ot yum 
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: list of all package
+            shell: yum list installed | grep tcpdump
+            register: result
+          - name: prinitng yum list
+            debug:
+                    var: result
+

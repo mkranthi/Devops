@@ -1,0 +1,14 @@
+---
+- name: printing facts
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: gathering facts from debug
+            debug:
+                    msg: "{{ ansible_architecture }}"
+          - name: printing  ipv4 address
+            debug:
+                    msg: "{{ansible_all_ipv4_addresses}}"
+          - name: printing os  family
+            debug:
+                    msg: "{{ansible_os_family}}"

@@ -1,0 +1,9 @@
+---
+- name: creating directory using ansible  built in module
+  hosts: localhost
+  become: yes
+  tasks:
+          - name:  create directory using ansible.builtin module
+            ansible.builtin.file:
+                    path: /home/ironman/test-ansible/builtin-module
+                    state: directory

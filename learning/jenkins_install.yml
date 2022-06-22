@@ -1,0 +1,25 @@
+---
+- name: installing jenkins
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: install java
+            yum:
+                    name: java-11-openjdk-devel
+                    state: present
+          - name: installing wget
+            yum:
+                    name: wget
+                    state: present
+          - name: Add jenkins repo
+            shell: wget http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo -O /etc/yum.repos.d/jenkins.repo
+          - name: adding key
+            shell: rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+          - name: installing jenkins 
+            yum:
+                    name: jenkins
+                    state: present
+          - name: starting jenkins service
+            service:
+                    name: jenkins
+                    state: started

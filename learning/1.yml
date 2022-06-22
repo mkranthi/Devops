@@ -1,0 +1,8 @@
+---
+- name: first ansible playbook
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: creating directory
+            shell: mkdir /home/ironman/test-ansible
+

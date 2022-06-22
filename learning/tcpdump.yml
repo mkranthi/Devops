@@ -1,0 +1,10 @@
+---
+- name: installing  tcpdump commands
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: installing tcpdump through  yum module
+            yum:
+                    name: tcpdump
+                    state: latest
+

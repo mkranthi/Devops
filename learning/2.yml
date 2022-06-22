@@ -1,0 +1,9 @@
+---
+- name: creating directory using ansible default filemodule
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: creating directory by file module
+            file:
+                    path: /home/ironman/test-ansible/ansible-example
+                    state: directory

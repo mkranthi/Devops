@@ -1,0 +1,9 @@
+---
+- name: printing os name
+  hosts: localhost
+  tasks:
+          - ansible.builtin.setup:
+                  filter: "ansible_os_family"
+            register: output
+          - ansible.builtin.debug:
+                  var: output

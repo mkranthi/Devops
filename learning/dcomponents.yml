@@ -1,0 +1,16 @@
+---
+- name: installing docker components
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: installing docker components from repository
+            yum:
+                    name: {{ packages }}
+          - vars:
+                  packages:
+                          - docker-ce
+                          - docker-ce-cli
+                          - containerd.io
+                          - docker-compose-plugin
+                  state: present
+

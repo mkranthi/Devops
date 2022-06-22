@@ -1,0 +1,22 @@
+---
+- hosts: localhost
+  become: yes
+  tasks: 
+
+          - name: installing git from yum
+            yum:
+                    name: "*"
+                    state: latest
+          - name: installing git
+            yum:
+                    name: git
+                    state: present
+          - name: checking  git  version
+            command: git --version
+            register: result
+          - debug:
+                  var: result.stdout_lines
+
+
+
+

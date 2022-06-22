@@ -1,0 +1,9 @@
+---
+# tasks file for webserver
+- name: prinitng package
+  yum:
+    list: yum
+  register: result
+
+- debug: 
+    msg: var.result

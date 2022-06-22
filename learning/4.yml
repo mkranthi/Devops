@@ -1,0 +1,23 @@
+---
+- name: creating file using both ansiblebuilt.in module and default module
+  hosts: localhost
+  become: yes
+  tasks:
+          - name: creating file using default module
+            file:
+                    path: /home/ironman/test-ansible/sample.txt
+                    state: touch
+
+          - name: using shell module
+            shell: touch /home/ironman/test-ansible/2.txt
+          - name: creating  file using builtin module
+            ansible.builtin.file:
+                    path: /home/ironman/test-ansible/4.txt
+                    state: touch
+          - name: creating link file
+            ansible.builtin.file:
+                    src: /home/ironman/test-ansible/symbolic.txt
+                    dest: /home/ironman/sample-symbolic
+                    state: link
+                    force: yes
+

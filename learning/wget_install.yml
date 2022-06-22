@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+          - name: installing wget
+            yum:
+                    name: wget
+                    state: present
