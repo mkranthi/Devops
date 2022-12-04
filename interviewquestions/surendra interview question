@@ -1,0 +1,332 @@
+1. What is connection draining?  
+
+2. What is Launch Configuration and Launch Template in ASG? 
+
+3. How two containers in Docker can communicate with each other? 
+
+4. On what basis pods will be scheduled to nodes.  
+
+5. Suppose I have 2 worker nodes by some reason in one worker node disk is full or memory is fully utilized. In this scenario on what basis pods will be terminated or deleted from this worker node? - 
+
+6. why we need to use repositories such as nexus or Docker hub, since we have already Git /Bitbucket/svn? 
+
+7. I have some code in Bit bucket how do you get it to GitHub? 
+
+8. How to check the Application response in Load Balancer or how do you check health of application in load balancer? 
+
+9. what is the min. and Max size of s3 Bucket? 
+
+10. How to remove dangling images? 
+
+11. How to create multi configuration as parameters pipeline project in Jenkins? 
+
+12. How to move Jenkins from one server to other server with how many different ways? 
+
+13. How to move on-premise machines to AWS cloud? 
+
+14. what is the Jenkins home directory? 
+
+15.how to setup ELK 
+
+EC2, ECS, S3, ELB, VPC, IAM. S3 bucket types and how to change the type of a policy 
+
+(VPC, Networking, EMR, RDS, ALB, Cloud) 
+
+what is Dynamic Node in Jenkins 
+
+how to ignore a stage in a Jenkins 
+
+How to configure the maven in Jenkins 
+
+Explain your build errors with Jenkins 
+
+What is devops Methodoligy 
+
+what is the region which you used in your AWS infra 
+
+what is node group and is it selfmanaged or how it is 
+
+is your EKS private or public 
+
+your EKS in Private subnet so where the LB will create with Loadbalancer service 
+
+how ingress and ingress controller works 
+
+what is lambda, sqs, sns and api gateway 
+
+how to print 1 to 10 with shell script 
+
+write script to print your name for 10 times 
+
+10 Ec2's are there and need to stop the traffic to one EC2 
+
+what is NACL and use 
+
+What is S3 ACL 
+
+How to get multiple(2 or more) approvals for a pull request in git 
+
+How will you monitor the Pod's 
+
+how will you monitor your AWS VPC 
+
+Explain the three tire architecture in AWS 
+
+User accessed a site in Browser so how it will reach you db 
+
+Think that you used MySQL, hope you would have tested with some queries. Explain few SQL queries. 
+
+How will you trouble shoot if a POD is not running(there is no liveness or readiness is configured) 
+
+What Security tools which you used in AWS Infra(trend micro (Package is ds_agent, port is 4118) 
+
+what is SCA, SAST AND DAST 
+
+what is microservice architecture and monolithic 
+
+what is blue green deployment 
+
+What is git bare repositary, bisect command, git amend 
+
+Finger command in linux 
+
+How to reset Jenkins admin password 
+
+What is ping exporter in Prometheus 
+
+What NACL Rules precedence 
+
+Best practices to follow for jenkins pipeline script 
+
+Difference between NAT gateway and NAT instance 
+
+Why we need executable permissions in linux for a directory 
+
+Write a docker file to deploy a nginx container 
+
+How to send email notification on a EC2 for memory, cpu utilization limit and S3 bucket object upload 
+
+How to send output of a one stage shell file to another stage input in jenkins 
+
+If we restart a EC2 instance then what will happen to it's attached epheremal volumes 
+
+Jenkins stage to upload the artifact into git instead of nexus 
+
+How to pass values to downstream jobs 
+
+How to find the files which modified in last 20 days 
+
+How to find a specific character in a given string 
+
+Enter ID and Password and print message as correct or not 
+
+Write a script to know whether the web site is working or not 
+
+How to show only 5 builds for all the jobs in the JENKINS 
+
+Command to find the wordcount of a specific word in a given file 
+
+Explain the Microservice Architecuture 
+
+Blue Green and Canary deployment explanation and usage 
+
+how to give permission to a user to restrict --> pull request and accept the push request 
+
+how do you define one build as Unstable in Jenkins 
+
+how to change the default "workspace directory" in jenkins 
+
+How to stop the build if test cases are not running correctly 
+
+POM extension -- Project Object Model 
+
+Use of double ampersent (&&) in the shell script 
+
+Docker architecture and component inside docker 
+
+what data linux will keep in inode  
+
+connect one machine linux machine to another linux machine in different nextwork 
+
+CORS Method usage 
+
+short fall or long fall methodoligies 
+
+what steps to follow to encrypt EBS 
+
+How ELB will route the traffic to specific EC2's and what security groups to use (Need to use the same security group which is used for the ELB and Ensure all necessary ports are open) 
+
+PDP (Pod disruption budget) 
+
+CRD custom resource definition in Kubernetes  
+
+How request will complete from browser to server 
+
+What is Helpers.tpl file in helm 
+
+Pod security policy 
+
+What is Behavior keyword in HPA 
+
+What is Inti and sidecar containers  
+
+How ingress controller words in different Namespaces 
+
+How to connect AWS to onpremise servers 
+
+How to create an image out of the container (Docker commit) 
+
+Diff b/w helm 2 and 3 
+
+What is Service Mesh or Istio 
+
+What is trunk based development 
+
+Diff between SQL and postgress sql 
+
+Microservice architecutre layers 
+
+How to declare env and arg in docker file 
+
+How to use the functions in shell script 
+
+What is gitOps or argocd 
+
+Jenkins parameter types (choice, boolean and string....) 
+
+24112022 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+1. What is VPC gateway? 
+
+2. What is EBS snapshot? 
+
+3. What is VPC peering, is it possible to do VPC peering between two VPCs which are present in two different AWS accounts? 
+
+7. What is AMI in AWS? 
+
+8. What is the difference between Network Load Balancer and Application Load Balancer? 
+
+9. What is the difference between COPY and ADD instruction in Dockerfile? 
+
+10. What is the difference between Docker container and K8s container? Why container needs to run in pod, why this extra layer called pod in K8s. 
+
+12. What are the plugins you used in Jenkins? 
+
+13. Will you able to write declarative pipeline from scratch? 
+
+1) How many shell types are there in linux? 
+
+Answer: in Advanced linux the default shell is Bash and the SH is the shell type for the earlier versions of the linux.  
+
+We also have the ZSH, CSH,  
+
+cat /etc/shells 
+
+2) How do you check performance of linux server? 
+
+Answer: TOP command will help us to know the server performance  
+Free: to know the memory 
+du:how much is utilized the disk space  
+df: how much disk free size is available 
+
+3) How to check disk space in linux/disk utilisation in linux? 
+
+Answer: du:how much is utilized the disk space  
+df: how much disk free size is available 
+
+4) Types of variables in shell scripting? 
+
+Answer: we have two types of Variables... one is system defined ($SHELL, $PWD, $HISTSIZE) and another one is user defined.  
+
+to know the system defined variables use (env or printenv commands) 
+
+5) How many s3 buckets you can create Max in AWS account? 
+
+6) How many Max VPC's and Subnets we can created in AWS? 
+
+7) Types of load balancers in AWS? 
+
+10) Types of networks in Docker? 
+
+12) How to create empty file in Ansible? 
+
+13) what is the main difference between Docker/Docker swarm and Kubernatees(K8's) ? 
+
+14) How to push docker images to docker repository/Docker hub? 
+
+15) what is docker-compose file and how do you deploy application using it? 
+
+16) How to run jobs in background in linux?  
+
+17) what is ansible tower? 
+
+18) what is the Ansible role ? 
+
+19) How to check no.of ".pdf" files in directory in linux? 
+
+20) what is Branching strategy you have used? 
+
+21) How to allow branch merging in git if previous build is success ? 
+
+22) what is difference between copy and template modules in Ansible? 
+
+27) can you tell me the components of Ansible? 
+
+28) what is VPC Peering? 
+
+ 
+
+ 
+
+1)Tell me the lifecycle of maven 
+
+2)what is maven default repository 
+
+3)what is the difference between pom.xml and settings XML 
+
+4)what will you do in SonarQube 
+
+5)why is nexus required 
+
+6)Told me to write pipeline script  
+
+7)Tell me any 5 plugins in jenkins 
+
+8)Told to write ansible playbook using copy module and yum module to install httpd 
+
+9)what is ansible roles 
+
+10)what are the services you know in AWS 
+
+11)tell me the command to mount EBS volume 
+
+12)what is VPC 
+
+13) Diffrent types of load balancers 
+
+14)diffrence between docker file and docker compose 
+
+15)what are the different types of networks in docker 
+
+16) what is the difference between cp and scp 
+
+17)why is RUN used? 
+
+18) Tell me any 5 git commands 
+
+
+
+
+
+http://mithuntechnologies.com/devops/DevOpsToolsMithunTechnologies.html  
+
+https://mithuntechnologies-devops.blogspot.com/?zx=966865a790c74cb0  
